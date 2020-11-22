@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Feature;
+namespace Tests\Unit;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
@@ -29,7 +29,6 @@ class UserTest extends TestCase
         $this->assertGreaterThanOrEqual($answer, 2);
         $this->assertLessThan($answer, 1);
         $this->assertLessThanOrEqual($answer, 2);
-
 
         // boolean関連
         $this->assertIsBool(true);
